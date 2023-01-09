@@ -1,0 +1,122 @@
+body .menu img {
+  width: 40px;
+  height: 40px;
+}
+body .menu img:hover {
+  background: gainsboro;
+}
+body .menu span {
+  font-size: 28px;
+  color: #f8f6fc;
+  font-weight: bold;
+  text-shadow: -2px -2px 4px rgba(255, 255, 255, 0.4), 2px 2px 4px rgba(0, 0, 0, 0.4);
+  caret-color: #262626;
+  outline: none;
+}
+body .contenedor {
+  position: relative;
+  z-index: 2;
+}
+body .btn_menu {
+  display: none;
+  cursor: pointer;
+}
+body .menu_items {
+  display: contents;
+  list-style: none;
+}
+body .imageweather {
+  margin-bottom: 2%;
+  background: lightskyblue;
+  border-radius: 35px;
+  box-shadow: 0 0 10px 10px #f3f3f3 inset;
+}
+ul.show {
+  border-radius: 0px 0px 10px 10px;
+  z-index: -1;
+  display: inline-flex;
+  position: fixed;
+  width: 90vw;
+  height: 140px;
+  background: #f8f6fc;
+  top: 58px;
+  text-align: center;
+  transition: all 0.8s;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+ul.show li {
+  margin: 30px 0 0 0;
+  line-height: 30px;
+}
+ul.show li:hover {
+  background: gainsboro;
+}
+@media only screen and (min-width: 769px) {
+  ul.show {
+    background: none;
+    position: relative;
+    width: 50%;
+    z-index: 1;
+    top: 70px;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: space-around;
+  }
+  ul.show li {
+    margin: 0px 0 0 0;
+    line-height: 0px;
+  }
+  ul.show li:hover {
+    background: none;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  body .btn_menu {
+    display: block;
+  }
+  body .menu_items {
+    position: relative;
+    z-index: -1;
+    display: inline-flex;
+    position: fixed;
+    width: 90vw;
+    height: 140px;
+    background: #f8f6fc;
+    top: -100vw;
+    text-align: center;
+    transition: all 1.5s;
+    flex-direction: column;
+  }
+  body .menu_items li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .btn_menu {
+    display: block;
+  }
+  body .btn_menu img {
+    height: 20px;
+    width: 25px;
+  }
+  body .menu_items {
+    position: relative;
+    z-index: -1;
+    display: inline-flex;
+    position: fixed;
+    width: 90vw;
+    height: 140px;
+    background: #f8f6fc;
+    top: -100vw;
+    text-align: center;
+    transition: all 1.5s;
+    flex-direction: column;
+  }
+  body .menu_items li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+}

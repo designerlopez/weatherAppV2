@@ -1,0 +1,39 @@
+.container{
+    position: relative;
+    top: 5%;
+    height: 250px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    border-radius: 30px;
+    background: #d5e892;
+    box-shadow:  20px 20px 60px 8px #b5c57c,
+                -20px -20px 60px 8px #f5ffa8;
+    transition: all 1s;                    
+}
+
+.ciudad{
+    position: relative;
+    top: 3vw;
+    width: 80%;
+    left: 5%;
+    border-radius: 50px 0px 50px 0px;
+    padding: 5%;
+    background: #d5e892;
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerDisable{
+    opacity: 0.0;
+    position: relative;
+    top: 5%;
+    height: 250px;
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    border-radius: 30px;
+    background: #d5e892;
+    box-shadow:  20px 20px 60px 8px #b5c57c,
+                -20px -20px 60px 8px #f5ffa8;;        
+}
